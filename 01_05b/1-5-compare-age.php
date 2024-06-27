@@ -28,8 +28,14 @@ class Person {
 	}
 }
 
-function compare_ages( $p1, $p2) {
+function compare_ages($p1, $p2) {
 	// Challenge: define this function
+	$p1Age = $p1->get_age();
+	$p2Age = $p2->get_age();
+
+	if ($p1Age > $p2Age) return(sprintf("%s is older than %s", $p1->get_name(), $p2->get_name()));
+	elseif ($p1Age < $p2Age) return(sprintf("%s is younger than %s", $p1->get_name(), $p2->get_name()));
+	else return(sprintf("%s and %s are the same age", $p1->get_name(), $p2->get_name()));
 }
 
 

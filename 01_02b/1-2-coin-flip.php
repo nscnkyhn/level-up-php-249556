@@ -15,6 +15,7 @@
 
 function flip() {
 	// Challenge: define this function
+	return (rand(0,1) == 0) ? "H" : "T";
 }
 
 ?>
