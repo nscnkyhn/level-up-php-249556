@@ -1,7 +1,12 @@
 <?php 
 function process_form() {
-	// Challenge: define this function
+	extract($_POST);
+	print(sprintf("Name: %s<br>E-Mail: %s<br>Message: %s", $name, $email, $message));
 } 
+
+if (isset($_POST["submit"])) {
+	process_form();
+}
 
 ?>
 
